@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agente bioinspirado: reparto equilibrado de solicitudes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="cabecera">
+  <div class="contenedor">
+    <p class="curso">Computación Bioinspirada · NRC 69891 · Actividad 2</p>
+    <h1>Agente bioinspirado para repartir solicitudes de forma equilibrada</h1>
+    <p class="sub">Un algoritmo genético propone qué funcionario atiende cada solicitud, respeta competencias y capacidad, y vuelve a optimizar cuando cambia el entorno.</p>
+  </div>
+</header>
+
+<main class="contenedor">
+  <p class="aviso" role="note"><strong>Datos ficticios.</strong> Todos los escenarios son sintéticos. El sistema solo recomienda: una persona decide.</p>
+
+  <details class="tarjeta" id="biologia">
+    <summary>¿Qué sistema biológico imita?</summary>
+    <p>La <strong>evolución por selección natural</strong>. Una población de repartos candidatos compite: los de menor costo <em>J</em> se seleccionan por torneo, se cruzan (intercambian segmentos) y mutan (cambian de responsable una solicitud). Los dos mejores se conservan (elitismo).</p>
+    <p class="nota">Límites de la analogía: es un algoritmo genético, no una red neuronal ni aprendizaje por refuerzo. Volver a optimizar tras un cambio no es aprendizaje continuo.</p>
+  </details>
+
+  <section class="tarjeta" aria-labelledby="t-escenario">
+    <h2 id="t-escenario">1. Escenario y parámetros</h2>
+    <div class="fila">
+      <label class="campo ancho">Escenario
+        <select id="escenario" disabled></select>
+      </label>
+    </div>
+    <p id="descEscenario" class="nota"></p>
+    <div class="fila params">
+      <label class="campo">Semilla<input id="p_semilla" type="number" value="42" step="1"></label>
+      <label class="campo">Población<input id="p_poblacion" type="number" value="50" min="2" step="1"></label>
+      <label class="campo">Generaciones<input id="p_generaciones" type="number" value="100" min="1" step="1"></label>
+      <label class="campo">Prob. cruce<input id="p_cruce" type="number" value="0.8" min="0" max="1" step="0.05"></label>
+      <label class="campo">Prob. mutación (por gen)<input id="p_mutacion" type="number" value="0.05" min="0" max="1" step="0.01"></label>
+      <label class="campo">Torneo<input id="p_torneo" type="number" value="3" min="1" step="1"></label>
+      <label class="campo">Elitismo<input id="p_elitismo" type="number" value="2" min="0" step="1"></label>
+    </div>
+    <div class="fila botones">
+      <button id="btnEjecutar" class="primario" disabled>Ejecutar optimización</button>
+      <button id="btnRestablecer" disabled>Restablecer parámetros</button>
+      <span id="estadoMotor" class="estado-motor" role="status">Cargando el motor Python (Pyodide)…</span>
+    </div>
+    <p id="errores" class="errores" role="alert" hidden></p>
+  </section>
+
+  <section class="tarjeta" aria-labelledby="t-cambios">
+    <h2 id="t-cambios">2. Cambios de entorno</h2>
+    <p class="nota">Cambia el escenario y el agente vuelve a optimizar. Se conserva el resultado anterior para comparar antes y después.</p>
+    <div class="fila">
+      <label class="campo">Tipo de cambio
+        <select id="tipoCambio" disabled>
+          <option value="deshabilitar_funcionario">Funcionario ausente (capacidad 0)</option>
+          <option value="reducir_capacidad">Reducir capacidad de un funcionario</option>
+          <option value="agregar_solicitud">Agregar una solicitud</option>
+        </select>
+      </label>
+      <label class="campo" id="campoFuncionario">Funcionario<select id="cambioFuncionario"></select></label>
+      <label class="campo" id="campoFactor" hidden>Capacidad que queda (%)<input id="cambioFactor" type="number" value="70" min="0" max="100" step="5"></label>
+      <label class="campo" id="campoTema" hidden>Temática<select id="cambioTema"></select></label>
+      <label class="campo" id="campoEsfuerzo" hidden>Esfuerzo (h)<input id="cambioEsfuerzo" type="number" value="3" min="0" step="0.5"></label>
+      <label class="campo" id="campoPrioridad" hidden>Prioridad
+        <select id="cambioPrioridad"><option>Alta</option><option selected>Media</option><option>Baja</option></select>
+      </label>
+    </div>
+    <div class="fila botones">
+      <button id="btnCambio" disabled>Aplicar cambio y reoptimizar</button>
+      <button id="btnCambiosEscenario" disabled hidden>Aplicar los cambios del escenario</button>
+      <button id="btnDeshacer" disabled>Deshacer todos los cambios</button>
+    </div>
+    <ul id="listaCambios" class="chips" aria-label="Cambios aplicados"></ul>
+  </section>
+
+  <section id="resultados" class="tarjeta" aria-labelledby="t-res" hidden>
+    <h2 id="t-res">3. Resultado</h2>
+    <div id="estadoResultado" role="status"></div>
+    <ul id="advertencias" class="advertencias"></ul>
+    <div id="kpis" class="kpis"></div>
+
+    <div id="bloqueComparacion">
+      <h3>Algoritmo genético frente a la referencia voraz</h3>
+      <div class="tabla-envoltura"><table id="tablaComparacion"></table></div>
+      <p id="textoComparacion" class="nota"></p>
+    </div>
+
+    <div id="bloqueAntesDespues" hidden>
+      <h3>Antes y después del cambio</h3>
+      <div class="tabla-envoltura"><table id="tablaAntesDespues"></table></div>
+      <p id="textoReasignadas" class="nota"></p>
+    </div>
+
+    <h3>Ocupación por funcionario</h3>
+    <p class="nota">Gris: horas pendientes previas. Azul: asignación nueva. La línea marca el 100 % de la capacidad.</p>
+    <div id="graficoOcupacion" class="graficos"></div>
+
+    <h3>Convergencia del algoritmo genético</h3>
+    <div id="graficoConvergencia" class="graficos"></div>
+
+    <h3>Asignación propuesta</h3>
+    <div class="tabla-envoltura alta"><table id="tablaAsignacion"></table></div>
+
+    <div class="fila botones">
+      <button id="btnExportar">Exportar resultado (JSON)</button>
+    </div>
+  </section>
+
+  <details class="tarjeta" id="datos">
+    <summary>Ver los datos del escenario actual</summary>
+    <h3>Funcionarios</h3>
+    <div class="tabla-envoltura"><table id="tablaFuncionarios"></table></div>
+    <h3>Solicitudes</h3>
+    <div class="tabla-envoltura alta"><table id="tablaSolicitudes"></table></div>
+  </details>
+</main>
+
+<footer class="contenedor pie">
+  <p>Motor: Python (biblioteca estándar) ejecutado en el navegador con Pyodide. Sin servidor ni datos reales. Código y pruebas en el repositorio del proyecto.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

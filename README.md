@@ -4,7 +4,7 @@ Asignatura: Computación Bioinspirada
 
 Un **algoritmo genético** (inspirado en la selección natural) recomienda qué funcionario atiende cada solicitud ciudadana **sintética**. Respeta competencias y capacidad residual, asigna una sola persona por solicitud y **vuelve a optimizar cuando cambia el entorno** (ausencia, menos capacidad, solicitudes nuevas). El sistema solo recomienda: una persona decide.
 
-- **Aplicación web:** `https://<USUARIO>.github.io/<REPOSITORIO>/` (completar tras publicar; ver «Publicar»).
+- **Aplicación web:** https://amds1994.github.io/BioAsigna/ (requiere activar Pages; ver «Publicar»).
 - Todos los datos son ficticios. No hay servidor, datos reales ni dependencias en el navegador salvo Pyodide (CDN).
 
 ## Qué hace
@@ -37,7 +37,6 @@ tests/           43 pruebas (pytest)
 evidencias/      CSV, resumen.md, figuras y capturas generadas por ejecución real
 docs/            Sitio estático (GitHub Pages): index.html, app.js, styles.css + copia de core/
 build_web.py     Copia core/ y scenarios.json a docs/
-informe/         Informe académico (PDF)
 ```
 
 ## Ejecutar
@@ -56,7 +55,7 @@ La web descarga Pyodide v0.26.4 desde jsDelivr, escribe `core/*.py` en su sistem
 
 1. Crear un repositorio y subir esta carpeta.
 2. Settings → Pages → *Deploy from a branch* → rama `main`, carpeta `/docs`.
-3. Esperar el despliegue y copiar la URL en este README y en el informe.
+3. Esperar el despliegue (1–2 min); la web queda en la URL indicada arriba.
 
 ## Resultados (30 semillas, ejecución real)
 
@@ -67,4 +66,4 @@ Resumen completo en `evidencias/resumen.md`. En resumen: el AG supera al voraz y
 - Datos sintéticos; el escenario `base_6x3` es una reconstrucción propia del ejemplo manual de la Actividad 1, no los datos originales.
 - Las pruebas simples de infactibilidad no prueban factibilidad.
 - Con 30 semillas la diferencia es estadística (prueba de signos), no una garantía general.
-- La versión de escritorio (Tkinter) reutiliza el mismo `core/` y se entrega aparte.
+- Una versión de escritorio (Tkinter) que reutilice `core/` está pendiente.

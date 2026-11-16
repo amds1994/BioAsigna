@@ -1,0 +1,4 @@
+# El motor (core/) usa solo la biblioteca estándar de Python.
+# Solo para pruebas y experimentos:
+pytest
+matplotlib

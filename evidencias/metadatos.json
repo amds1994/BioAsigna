@@ -1,0 +1,26 @@
+{
+ "fecha_ejecucion": "2026-11-15T21:45:44",
+ "python": "3.13.18",
+ "plataforma": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+ "semillas": [
+  1,
+  30
+ ],
+ "n_semillas": 30,
+ "parametros_ag": {
+  "poblacion": 50,
+  "generaciones": 100,
+  "p_cruce": 0.8,
+  "p_mutacion": 0.05,
+  "torneo": 3,
+  "elitismo": 2
+ },
+ "pesos_J": {
+  "max": 0.6,
+  "sigma": 0.4
+ },
+ "presupuesto_local": "igual a las evaluaciones del AG con la misma semilla",
+ "huella_codigo_core": "767fa3e6e4cae003",
+ "huella_escenarios": "692f2bd9670a90ef",
+ "segundos_totales": 25.5
+}

@@ -1,0 +1,1999 @@
+{
+ "escenarios": [
+  {
+   "id": "base_6x3",
+   "nombre": "Base: 6 solicitudes, 3 funcionarios",
+   "descripcion": "Reconstrucción propia del ejemplo manual de la Actividad 1 (cargas 6/5/4 h frente a 5/5/5 h). Existe un reparto perfectamente equilibrado.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 10,
+      "pendiente": 0
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T2",
+       "T3"
+      ],
+      "capacidad": 10,
+      "pendiente": 0
+     },
+     {
+      "id": "F3",
+      "competencias": [
+       "T1",
+       "T3"
+      ],
+      "capacidad": 10,
+      "pendiente": 0
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 3,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S002",
+      "tematica": "T2",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S003",
+      "tematica": "T3",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S004",
+      "tematica": "T1",
+      "esfuerzo": 2,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S005",
+      "tematica": "T2",
+      "esfuerzo": 2,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S006",
+      "tematica": "T3",
+      "esfuerzo": 3,
+      "prioridad": "Baja"
+     }
+    ]
+   }
+  },
+  {
+   "id": "carga_moderada_20x5",
+   "nombre": "Carga moderada: 20 solicitudes, 5 funcionarios",
+   "descripcion": "Capacidades y cargas pendientes distintas; un funcionario generalista.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 40,
+      "pendiente": 10
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T2",
+       "T3"
+      ],
+      "capacidad": 40,
+      "pendiente": 6
+     },
+     {
+      "id": "F3",
+      "competencias": [
+       "T3",
+       "T4"
+      ],
+      "capacidad": 35,
+      "pendiente": 12
+     },
+     {
+      "id": "F4",
+      "competencias": [
+       "T4",
+       "T1"
+      ],
+      "capacidad": 45,
+      "pendiente": 8
+     },
+     {
+      "id": "F5",
+      "competencias": [
+       "T1",
+       "T2",
+       "T3",
+       "T4"
+      ],
+      "capacidad": 30,
+      "pendiente": 4
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S002",
+      "tematica": "T1",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S003",
+      "tematica": "T4",
+      "esfuerzo": 5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S004",
+      "tematica": "T4",
+      "esfuerzo": 2.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S005",
+      "tematica": "T1",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S006",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S007",
+      "tematica": "T4",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S008",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S009",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S010",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S011",
+      "tematica": "T3",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S012",
+      "tematica": "T3",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S013",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S014",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S015",
+      "tematica": "T4",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S016",
+      "tematica": "T4",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S017",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S018",
+      "tematica": "T4",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S019",
+      "tematica": "T2",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S020",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     }
+    ]
+   }
+  },
+  {
+   "id": "heterogeneidad_30x6",
+   "nombre": "Heterogeneidad: 30 solicitudes, 6 funcionarios",
+   "descripcion": "Capacidades muy distintas; T4 solo la atienden 2 personas y T5 solo 3.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1",
+       "T2",
+       "T3"
+      ],
+      "capacidad": 60,
+      "pendiente": 20
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T2",
+       "T4"
+      ],
+      "capacidad": 50,
+      "pendiente": 10
+     },
+     {
+      "id": "F3",
+      "competencias": [
+       "T3",
+       "T5"
+      ],
+      "capacidad": 40,
+      "pendiente": 15
+     },
+     {
+      "id": "F4",
+      "competencias": [
+       "T1",
+       "T5"
+      ],
+      "capacidad": 30,
+      "pendiente": 5
+     },
+     {
+      "id": "F5",
+      "competencias": [
+       "T4"
+      ],
+      "capacidad": 24,
+      "pendiente": 18
+     },
+     {
+      "id": "F6",
+      "competencias": [
+       "T2",
+       "T5"
+      ],
+      "capacidad": 20,
+      "pendiente": 4
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 1.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S002",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S003",
+      "tematica": "T2",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S004",
+      "tematica": "T3",
+      "esfuerzo": 1.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S005",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S006",
+      "tematica": "T1",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S007",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S008",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S009",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S010",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S011",
+      "tematica": "T3",
+      "esfuerzo": 2,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S012",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S013",
+      "tematica": "T3",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S014",
+      "tematica": "T1",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S015",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S016",
+      "tematica": "T5",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S017",
+      "tematica": "T2",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S018",
+      "tematica": "T2",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S019",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S020",
+      "tematica": "T4",
+      "esfuerzo": 1,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S021",
+      "tematica": "T4",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S022",
+      "tematica": "T5",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S023",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S024",
+      "tematica": "T2",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S025",
+      "tematica": "T4",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S026",
+      "tematica": "T5",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S027",
+      "tematica": "T3",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S028",
+      "tematica": "T1",
+      "esfuerzo": 2.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S029",
+      "tematica": "T4",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S030",
+      "tematica": "T1",
+      "esfuerzo": 1.5,
+      "prioridad": "Baja"
+     }
+    ]
+   }
+  },
+  {
+   "id": "escala_150x12",
+   "nombre": "Escala: 150 solicitudes, 12 funcionarios",
+   "descripcion": "Instancia grande, donde la diferencia entre algoritmos podría notarse.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1",
+       "T2",
+       "T4"
+      ],
+      "capacidad": 60,
+      "pendiente": 5
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T2",
+       "T3"
+      ],
+      "capacidad": 40,
+      "pendiente": 0
+     },
+     {
+      "id": "F3",
+      "competencias": [
+       "T3",
+       "T4",
+       "T6"
+      ],
+      "capacidad": 70,
+      "pendiente": 10
+     },
+     {
+      "id": "F4",
+      "competencias": [
+       "T4",
+       "T5"
+      ],
+      "capacidad": 60,
+      "pendiente": 0
+     },
+     {
+      "id": "F5",
+      "competencias": [
+       "T5",
+       "T6",
+       "T2"
+      ],
+      "capacidad": 40,
+      "pendiente": 0
+     },
+     {
+      "id": "F6",
+      "competencias": [
+       "T6",
+       "T1"
+      ],
+      "capacidad": 60,
+      "pendiente": 20
+     },
+     {
+      "id": "F7",
+      "competencias": [
+       "T1",
+       "T2",
+       "T4"
+      ],
+      "capacidad": 60,
+      "pendiente": 30
+     },
+     {
+      "id": "F8",
+      "competencias": [
+       "T2",
+       "T3"
+      ],
+      "capacidad": 60,
+      "pendiente": 10
+     },
+     {
+      "id": "F9",
+      "competencias": [
+       "T3",
+       "T4",
+       "T6"
+      ],
+      "capacidad": 50,
+      "pendiente": 5
+     },
+     {
+      "id": "F10",
+      "competencias": [
+       "T4",
+       "T5"
+      ],
+      "capacidad": 50,
+      "pendiente": 20
+     },
+     {
+      "id": "F11",
+      "competencias": [
+       "T5",
+       "T6",
+       "T2"
+      ],
+      "capacidad": 40,
+      "pendiente": 5
+     },
+     {
+      "id": "F12",
+      "competencias": [
+       "T6",
+       "T1"
+      ],
+      "capacidad": 60,
+      "pendiente": 10
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T5",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S002",
+      "tematica": "T3",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S003",
+      "tematica": "T1",
+      "esfuerzo": 2.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S004",
+      "tematica": "T5",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S005",
+      "tematica": "T3",
+      "esfuerzo": 3,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S006",
+      "tematica": "T3",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S007",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S008",
+      "tematica": "T6",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S009",
+      "tematica": "T6",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S010",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S011",
+      "tematica": "T6",
+      "esfuerzo": 2.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S012",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S013",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S014",
+      "tematica": "T4",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S015",
+      "tematica": "T2",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S016",
+      "tematica": "T6",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S017",
+      "tematica": "T3",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S018",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S019",
+      "tematica": "T4",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S020",
+      "tematica": "T3",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S021",
+      "tematica": "T4",
+      "esfuerzo": 3,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S022",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S023",
+      "tematica": "T4",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S024",
+      "tematica": "T5",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S025",
+      "tematica": "T4",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S026",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S027",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S028",
+      "tematica": "T2",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S029",
+      "tematica": "T2",
+      "esfuerzo": 2,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S030",
+      "tematica": "T5",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S031",
+      "tematica": "T4",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S032",
+      "tematica": "T5",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S033",
+      "tematica": "T6",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S034",
+      "tematica": "T3",
+      "esfuerzo": 2,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S035",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S036",
+      "tematica": "T3",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S037",
+      "tematica": "T4",
+      "esfuerzo": 3,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S038",
+      "tematica": "T3",
+      "esfuerzo": 2,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S039",
+      "tematica": "T4",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S040",
+      "tematica": "T2",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S041",
+      "tematica": "T6",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S042",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S043",
+      "tematica": "T6",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S044",
+      "tematica": "T4",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S045",
+      "tematica": "T2",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S046",
+      "tematica": "T4",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S047",
+      "tematica": "T5",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S048",
+      "tematica": "T4",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S049",
+      "tematica": "T6",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S050",
+      "tematica": "T6",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S051",
+      "tematica": "T2",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S052",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S053",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S054",
+      "tematica": "T6",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S055",
+      "tematica": "T5",
+      "esfuerzo": 1.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S056",
+      "tematica": "T6",
+      "esfuerzo": 1.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S057",
+      "tematica": "T4",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S058",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S059",
+      "tematica": "T4",
+      "esfuerzo": 5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S060",
+      "tematica": "T2",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S061",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S062",
+      "tematica": "T6",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S063",
+      "tematica": "T2",
+      "esfuerzo": 1.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S064",
+      "tematica": "T3",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S065",
+      "tematica": "T4",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S066",
+      "tematica": "T5",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S067",
+      "tematica": "T3",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S068",
+      "tematica": "T1",
+      "esfuerzo": 3,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S069",
+      "tematica": "T1",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S070",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S071",
+      "tematica": "T6",
+      "esfuerzo": 3,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S072",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S073",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S074",
+      "tematica": "T3",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S075",
+      "tematica": "T5",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S076",
+      "tematica": "T6",
+      "esfuerzo": 3,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S077",
+      "tematica": "T2",
+      "esfuerzo": 1,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S078",
+      "tematica": "T2",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S079",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S080",
+      "tematica": "T2",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S081",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S082",
+      "tematica": "T6",
+      "esfuerzo": 2,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S083",
+      "tematica": "T6",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S084",
+      "tematica": "T1",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S085",
+      "tematica": "T4",
+      "esfuerzo": 3,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S086",
+      "tematica": "T4",
+      "esfuerzo": 2.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S087",
+      "tematica": "T4",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S088",
+      "tematica": "T6",
+      "esfuerzo": 2,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S089",
+      "tematica": "T4",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S090",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S091",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S092",
+      "tematica": "T6",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S093",
+      "tematica": "T5",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S094",
+      "tematica": "T1",
+      "esfuerzo": 3,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S095",
+      "tematica": "T3",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S096",
+      "tematica": "T5",
+      "esfuerzo": 1.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S097",
+      "tematica": "T5",
+      "esfuerzo": 5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S098",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S099",
+      "tematica": "T1",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S100",
+      "tematica": "T1",
+      "esfuerzo": 2,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S101",
+      "tematica": "T5",
+      "esfuerzo": 2,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S102",
+      "tematica": "T2",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S103",
+      "tematica": "T4",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S104",
+      "tematica": "T6",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S105",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S106",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S107",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S108",
+      "tematica": "T3",
+      "esfuerzo": 1.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S109",
+      "tematica": "T5",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S110",
+      "tematica": "T1",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S111",
+      "tematica": "T6",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S112",
+      "tematica": "T1",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S113",
+      "tematica": "T6",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S114",
+      "tematica": "T3",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S115",
+      "tematica": "T5",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S116",
+      "tematica": "T5",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S117",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S118",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S119",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S120",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S121",
+      "tematica": "T6",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S122",
+      "tematica": "T5",
+      "esfuerzo": 3.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S123",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S124",
+      "tematica": "T3",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S125",
+      "tematica": "T5",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S126",
+      "tematica": "T2",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S127",
+      "tematica": "T6",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S128",
+      "tematica": "T5",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S129",
+      "tematica": "T6",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S130",
+      "tematica": "T6",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S131",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S132",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S133",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S134",
+      "tematica": "T6",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S135",
+      "tematica": "T6",
+      "esfuerzo": 1.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S136",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S137",
+      "tematica": "T2",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S138",
+      "tematica": "T1",
+      "esfuerzo": 2,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S139",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S140",
+      "tematica": "T4",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S141",
+      "tematica": "T3",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S142",
+      "tematica": "T2",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S143",
+      "tematica": "T6",
+      "esfuerzo": 2.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S144",
+      "tematica": "T6",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S145",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S146",
+      "tematica": "T4",
+      "esfuerzo": 1.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S147",
+      "tematica": "T2",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S148",
+      "tematica": "T3",
+      "esfuerzo": 3,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S149",
+      "tematica": "T2",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S150",
+      "tematica": "T5",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cambio_entorno",
+   "nombre": "Cambio de entorno (sobre la carga moderada)",
+   "descripcion": "F2 se ausenta, F4 pierde 30 % de capacidad y llegan 3 solicitudes nuevas.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 40,
+      "pendiente": 10
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T2",
+       "T3"
+      ],
+      "capacidad": 40,
+      "pendiente": 6
+     },
+     {
+      "id": "F3",
+      "competencias": [
+       "T3",
+       "T4"
+      ],
+      "capacidad": 35,
+      "pendiente": 12
+     },
+     {
+      "id": "F4",
+      "competencias": [
+       "T4",
+       "T1"
+      ],
+      "capacidad": 45,
+      "pendiente": 8
+     },
+     {
+      "id": "F5",
+      "competencias": [
+       "T1",
+       "T2",
+       "T3",
+       "T4"
+      ],
+      "capacidad": 30,
+      "pendiente": 4
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S002",
+      "tematica": "T1",
+      "esfuerzo": 2.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S003",
+      "tematica": "T4",
+      "esfuerzo": 5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S004",
+      "tematica": "T4",
+      "esfuerzo": 2.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S005",
+      "tematica": "T1",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S006",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S007",
+      "tematica": "T4",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S008",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S009",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S010",
+      "tematica": "T1",
+      "esfuerzo": 3.5,
+      "prioridad": "Alta"
+     },
+     {
+      "id": "S011",
+      "tematica": "T3",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S012",
+      "tematica": "T3",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S013",
+      "tematica": "T3",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S014",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S015",
+      "tematica": "T4",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S016",
+      "tematica": "T4",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S017",
+      "tematica": "T3",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S018",
+      "tematica": "T4",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S019",
+      "tematica": "T2",
+      "esfuerzo": 1,
+      "prioridad": "Baja"
+     },
+     {
+      "id": "S020",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     }
+    ]
+   },
+   "cambios": [
+    {
+     "tipo": "deshabilitar_funcionario",
+     "funcionario": "F2"
+    },
+    {
+     "tipo": "reducir_capacidad",
+     "funcionario": "F4",
+     "factor": 0.7
+    },
+    {
+     "tipo": "agregar_solicitud",
+     "solicitud": {
+      "id": "S021",
+      "tematica": "T2",
+      "esfuerzo": 3,
+      "prioridad": "Alta"
+     }
+    },
+    {
+     "tipo": "agregar_solicitud",
+     "solicitud": {
+      "id": "S022",
+      "tematica": "T3",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     }
+    },
+    {
+     "tipo": "agregar_solicitud",
+     "solicitud": {
+      "id": "S023",
+      "tematica": "T1",
+      "esfuerzo": 4,
+      "prioridad": "Baja"
+     }
+    }
+   ]
+  },
+  {
+   "id": "sobrecarga_previa",
+   "nombre": "Sobrecarga previa",
+   "descripcion": "F1 ya tiene 30 h pendientes con capacidad de 25 h: no recibe nada nuevo.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 25,
+      "pendiente": 30
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 40,
+      "pendiente": 10
+     },
+     {
+      "id": "F3",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 40,
+      "pendiente": 5
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S002",
+      "tematica": "T2",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S003",
+      "tematica": "T1",
+      "esfuerzo": 1.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S004",
+      "tematica": "T2",
+      "esfuerzo": 4,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S005",
+      "tematica": "T1",
+      "esfuerzo": 2.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S006",
+      "tematica": "T2",
+      "esfuerzo": 3.5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S007",
+      "tematica": "T1",
+      "esfuerzo": 1,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S008",
+      "tematica": "T2",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     }
+    ]
+   }
+  },
+  {
+   "id": "saturacion",
+   "nombre": "Saturación (infactible demostrable)",
+   "descripcion": "La demanda total (40 h) supera la capacidad residual (30 h).",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 10,
+      "pendiente": 0
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 10,
+      "pendiente": 0
+     },
+     {
+      "id": "F3",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 10,
+      "pendiente": 0
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S002",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S003",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S004",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S005",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S006",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S007",
+      "tematica": "T1",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S008",
+      "tematica": "T2",
+      "esfuerzo": 5,
+      "prioridad": "Media"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sin_competente",
+   "nombre": "Solicitud sin funcionario competente",
+   "descripcion": "La temática T9 no la atiende nadie: el estado debe decirlo.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1"
+      ],
+      "capacidad": 20,
+      "pendiente": 0
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T1",
+       "T2"
+      ],
+      "capacidad": 20,
+      "pendiente": 0
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 2,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S002",
+      "tematica": "T9",
+      "esfuerzo": 2,
+      "prioridad": "Alta"
+     }
+    ]
+   }
+  },
+  {
+   "id": "empaquetado_dificil",
+   "nombre": "Empaquetado imposible no detectado por pruebas simples",
+   "descripcion": "3 solicitudes de 3 h y 2 funcionarios de 5 h: la suma cabe (9 de 10 h) pero no cada pieza. El sistema no demuestra imposibilidad: informa que no encontró reparto.",
+   "instancia": {
+    "funcionarios": [
+     {
+      "id": "F1",
+      "competencias": [
+       "T1"
+      ],
+      "capacidad": 5,
+      "pendiente": 0
+     },
+     {
+      "id": "F2",
+      "competencias": [
+       "T1"
+      ],
+      "capacidad": 5,
+      "pendiente": 0
+     }
+    ],
+    "solicitudes": [
+     {
+      "id": "S001",
+      "tematica": "T1",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S002",
+      "tematica": "T1",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     },
+     {
+      "id": "S003",
+      "tematica": "T1",
+      "esfuerzo": 3,
+      "prioridad": "Media"
+     }
+    ]
+   }
+  }
+ ]
+}
