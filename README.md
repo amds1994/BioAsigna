@@ -1,7 +1,6 @@
 # BioAsigna — Asignación de solicitudes mediante algoritmos genéticos
 
-Actividad 2 · Computación Bioinspirada (NRC 69891) · UNIMINUTO
-Autor: Andrés Mauricio Domínguez Sánchez · Docente: Jamilton Fernando Benavides
+Asignatura: Computación Bioinspirada
 
 Un **algoritmo genético** (inspirado en la selección natural) recomienda qué funcionario atiende cada solicitud ciudadana **sintética**. Respeta competencias y capacidad residual, asigna una sola persona por solicitud y **vuelve a optimizar cuando cambia el entorno** (ausencia, menos capacidad, solicitudes nuevas). El sistema solo recomienda: una persona decide.
 
